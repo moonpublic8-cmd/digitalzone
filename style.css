@@ -1,0 +1,427 @@
+/* --- Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* --- Header & Navigation Bar --- */
+header {
+    background: #002D62;
+    color: #fff;
+    padding: 15px 50px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: 700;
+    color: #00bcd4;
+    letter-spacing: 1px;
+}
+
+nav ul.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+nav ul.nav-list li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: color 0.3s ease;
+    position: relative;
+}
+
+nav ul.nav-list li a:hover, 
+nav ul.nav-list li a.active {
+    color: #00bcd4;
+}
+
+/* --- Hero Banner Section --- */
+.hero {
+    background: linear-gradient(rgba(0, 45, 98, 0.85), rgba(0, 45, 98, 0.85)), url('https://images.unsplash.com/photo-1531482615713-2afd69097998?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 130px 20px;
+}
+
+.hero-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-content h2 {
+    font-size: 46px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+/* --- Buttons --- */
+.btn {
+    display: inline-block;
+    background: #00bcd4;
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0, 188, 212, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: #0097a7;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 188, 212, 0.6);
+}
+
+/* --- Common Section Styling --- */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section h2 {
+    font-size: 36px;
+    color: #002D62;
+    margin-bottom: 15px;
+    font-weight: 700;
+}
+
+.section-desc {
+    color: #666;
+    font-size: 17px;
+    margin-bottom: 50px;
+}
+
+/* --- Common Page Banners (For other pages) --- */
+.page-banner {
+    background: linear-gradient(rgba(0, 45, 98, 0.9), rgba(0, 45, 98, 0.9)), url('https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.page-banner h2 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.page-banner p {
+    font-size: 18px;
+    color: #cccccc;
+}
+
+/* --- Cards Grid (Courses & Features) --- */
+.course-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.course-card {
+    background: white;
+    padding: 35px 25px;
+    width: 330px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    text-align: left;
+    border-top: 4px solid #002D62;
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 45, 98, 0.15);
+    border-top-color: #00bcd4;
+}
+
+.course-icon {
+    font-size: 45px;
+    color: #002D62;
+    margin-bottom: 20px;
+}
+
+.course-card h3 {
+    color: #002D62;
+    margin-bottom: 12px;
+    font-size: 22px;
+}
+
+.course-card p {
+    color: #555;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* --- About Page Styling --- */
+.about-container {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+    background: white;
+    padding: 50px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+.about-text p {
+    line-height: 1.8;
+    color: #555;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+.about-points {
+    list-style: none;
+    padding: 0;
+    margin-top: 25px;
+}
+
+.about-points li {
+    margin-bottom: 15px;
+    font-weight: 600;
+    font-size: 17px;
+    color: #002D62;
+}
+
+.about-points li i {
+    color: #00bcd4;
+    margin-right: 12px;
+}
+
+/* --- Contact Page Layout --- */
+.contact-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1100px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.contact-info, .contact-form-box {
+    background: white;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+    flex: 1;
+    min-width: 320px;
+}
+
+.contact-info h3, .contact-form-box h3 {
+    color: #002D62;
+    margin-bottom: 25px;
+    font-size: 24px;
+}
+
+.contact-info p {
+    margin-bottom: 18px;
+    color: #555;
+    font-size: 16px;
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.contact-info p i {
+    color: #00bcd4;
+    font-size: 18px;
+    margin-top: 4px;
+}
+
+/* --- Forms Styling --- */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: 600;
+    color: #444;
+    font-size: 15px;
+}
+
+.form-group input, 
+.form-group select,
+.form-group textarea {
+    padding: 14px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    font-family: inherit;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus, 
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: #00bcd4;
+    outline: none;
+    background-color: #fff;
+    box-shadow: 0 0 5px rgba(0, 188, 212, 0.2);
+}
+
+.submit-btn {
+    background: #002D62;
+    color: white;
+    padding: 14px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+    background: #001f42;
+}
+
+/* --- Footer Section --- */
+.footer {
+    background: #111;
+    color: white;
+    padding: 60px 20px 20px 20px;
+    margin-top: 80px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+    gap: 40px;
+    text-align: left;
+    margin-bottom: 40px;
+}
+
+.footer-box {
+    flex: 1;
+    min-width: 280px;
+}
+
+.footer-box h3 {
+    color: #00bcd4;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.footer-box p {
+    color: #bbb;
+    margin-bottom: 12px;
+    line-height: 1.6;
+    font-size: 15px;
+}
+
+.footer-box p i {
+    margin-right: 10px;
+    color: #00bcd4;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+    color: #777;
+    font-size: 14px;
+}
+
+/* --- Mobile Responsive (Hamburger Menu) --- */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    display: block;
+    width: 28px;
+    height: 3px;
+    margin: 6px auto;
+    background-color: white;
+    transition: all 0.3s ease;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    header {
+        padding: 15px 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    nav ul.nav-list {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        left: -100%;
+        background-color: #002D62;
+        width: 100%;
+        text-align: center;
+        padding: 30px 0;
+        transition: 0.3s ease-in-out;
+        box-shadow: 0px 10px 15px rgba(0,0,0,0.3);
+    }
+
+    nav ul.nav-list.active {
+        left: 0;
+    }
+
+    nav ul.nav-list li {
+        margin: 15px 0;
+    }
+    
+    .hero-content h2 {
+        font-size: 32px;
+    }
+
+    .hero-content p {
+        font-size: 16px;
+    }
+}
